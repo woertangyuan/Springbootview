@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yubo.mapper.UsersMapper">
+<insert id="addtj" parameterType="String">
+    insert into users (username,password) values(#{arg0},#{arg1})
+</insert>
+    <select id="getuck" resultType="com.yubo.pojo.Users" parameterType="com.yubo.pojo.Users">
+        select * from users
+    </select>
+
+</mapper>

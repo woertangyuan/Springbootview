@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+<link rel="stylesheet" type="text/css" th:href="@{css/style.css}"/>
+</head>
+<body>
+
+儿子
+<img th:src="@{img/timg.jpg}"/>
+<table>
+
+    <tr th:each="a,var:${pageinfo.list}">
+        序号：<td th:text="${var.count}"></td>
+        <td th:text="${a.username}"></td>
+        <td th:text="${a.password}"></td>
+    </tr>
+</table>
+</body>
+</html>
